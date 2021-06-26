@@ -1,71 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-:root {
-  background: darkgray;
-  --colorWhite: #ffffff;
-  --colorLightBlueHover: #30c8d3;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Wapper */
-
-/* Intro */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-weight: 900;
-  line-height: 1.5;
-  letter-spacing: 0.075em;
-  text-transform: uppercase;
-  margin: 0 0 1rem 0;
-}
-#intro h1 {
-  font-size: 4rem;
-  line-height: 1;
-}
-
-#intro p {
-  font-size: 1.25rem;
-  font-style: italic;
-  margin-top: -0.25rem;
-  text-align: center;
-}
-
-#intro {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: var(--colorWhite);
-  justify-content: flex-end;
-  min-height: 80vh;
-}
-
-.fa-arrow-down {
-  color: var(--colorWhite);
-  font-size: 2em;
-}
-
-.circle {
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--colorWhite);
-  border-radius: 50%;
-  width: 4em;
-  height: 4em;
-  display: block;
-}
-
-.circle:hover {
-  border-color: var(--colorLightBlueHover);
-}
-
-.circle i:hover {
-  color: var(--colorLightBlueHover);
+body{
+  font-size: 1em;
+  color: #fff;
+  background-color: #61122f;  
+  font-family: 'Oxygen', sans-serif;
 }
