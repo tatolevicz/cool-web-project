@@ -1,9 +1,9 @@
 
-.icon{
-  width: 4em;
-  height: 4em;
-  background: url("../images/music_note.png");
-  background-size: 100%;
+
+.icon
+{
+  height: 50px;
+  width: 50px;
 }
 
 .gradient{
@@ -15,4 +15,8 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
   margin-top: 4em;
+}
+.social
+{
+  color: black;
 }
