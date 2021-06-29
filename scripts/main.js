@@ -1,0 +1,1 @@
+gsap.to(".text", { duration: 1, x: 300 });
