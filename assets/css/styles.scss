@@ -1,0 +1,33 @@
+$textColorWhite: #fff;
+$bckgColorHeader: #3BCEAC;
+$linkHeaderHover: #47FFD4;
+
+header{
+ background: $bckgColorHeader;
+ font-variant-caps: small-caps;
+}
+
+.page-link {
+ text-align: center;
+ font-weight: bold;
+ font-size: 20px;
+ background: $bckgColorHeader;
+ color: $textColorWhite;
+ text-decoration: none;
+ display: flex;
+ flex-direction: horizontal;
+ a {
+  text-decoration: none;
+  color: $textColorWhite;
+  margin-top: 1em;
+  &:hover{
+   
+   color: $linkHeaderHover;
+  }
+ }
+ &:hover
+ {
+  background-color: $bckgColorHeader;
+ }
+}
+

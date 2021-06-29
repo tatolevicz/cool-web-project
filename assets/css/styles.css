@@ -1,0 +1,35 @@
+header {
+  background: #3BCEAC;
+  font-variant-caps: small-caps;
+}
+
+.page-link {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  background: #3BCEAC;
+  color: #fff;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: horizontal;
+          flex-direction: horizontal;
+}
+
+.page-link a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 1em;
+}
+
+.page-link a:hover {
+  color: #47FFD4;
+}
+
+.page-link:hover {
+  background-color: #3BCEAC;
+}
+/*# sourceMappingURL=styles.css.map */
