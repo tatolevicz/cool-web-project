@@ -1,18 +1,23 @@
+div {
+  position: relative;
+}
+
 header {
   background: #3BCEAC;
-  font-variant-caps: small-caps;
+  height: 80vh;
 }
 
 .page-link {
+  font-family: 'Montsserat', sans-serif;
+  font-weight: 800;
   text-align: center;
-  font-weight: bold;
-  font-size: 20px;
   background: #3BCEAC;
   color: #fff;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: horizontal;
@@ -31,5 +36,41 @@ header {
 
 .page-link:hover {
   background-color: #3BCEAC;
+}
+
+.header-content-left {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+.header-content-left h1 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.header-content-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-content-right .header-picture {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 343px;
+}
+
+.effect-canvas {
+  background: #fff;
+  height: 400px;
+  width: 60px;
+}
+
+.txtPresentation-picture {
+  font-size: 12px;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
