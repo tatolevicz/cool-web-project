@@ -1,4 +1,8 @@
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
 
 .icon
 {
@@ -6,17 +10,38 @@
   width: 50px;
 }
 
+.margin
+{
+  height: 100px;
+}
+
 .gradient{
   background: rgb(0,84,255);
   background: linear-gradient(158deg, rgba(0,84,255,1) 0%, rgba(151,0,255,1) 100%);
 }
 
-.page-header {
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  margin-top: 4em;
-}
 .social
 {
   color: black;
+}
+
+.features ul{
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+.features h1{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2em;
+}
+.features ul li{
+  padding-left: 2rem;
+  background: url("../images/check-circle.svg") no-repeat;
+  line-height: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.options
+{
+  color: gray;
 }
