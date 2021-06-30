@@ -1,17 +1,21 @@
+body {
+  background: #3bceac;
+}
+
 div {
   position: relative;
 }
 
-header {
-  background: #3BCEAC;
-  height: 80vh;
+header .container-fluid {
+  background: #3bceac;
 }
 
 .page-link {
-  font-family: 'Montsserat', sans-serif;
+  margin-top: 3em;
+  font-family: "Montsserat", sans-serif;
   font-weight: 800;
   text-align: center;
-  background: #3BCEAC;
+  background: #3bceac;
   color: #fff;
   text-decoration: none;
   display: -webkit-box;
@@ -31,20 +35,21 @@ header {
 }
 
 .page-link a:hover {
-  color: #47FFD4;
+  color: #47ffd4;
 }
 
 .page-link:hover {
-  background-color: #3BCEAC;
+  background-color: #3bceac;
 }
 
 .header-content-left {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
+  background-repeat: no-repeat;
 }
 
 .header-content-left h1 {
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: bold;
   letter-spacing: 0px;
 }
@@ -54,23 +59,53 @@ header {
   text-decoration: none;
 }
 
+.header-content-left a:hover {
+  color: #47ffd4;
+}
+
+.header-content-right {
+  letter-spacing: 2px;
+}
+
 .header-content-right .header-picture {
+  z-index: 2;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
   border-radius: 343px;
+  margin-left: 120px;
+}
+
+.header-content-right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-content-right a:hover {
+  color: #47ffd4;
 }
 
 .effect-canvas {
-  background: #fff;
-  height: 400px;
-  width: 60px;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 85%;
+  margin-top: 1em;
 }
 
 .txtPresentation-picture {
   font-size: 12px;
   text-align: center;
+}
+
+.waveBottomHeader {
+  fill: #ee4266;
+}
+
+.projects {
+  background-color: #ee4266;
+  height: 80vh;
 }
 /*# sourceMappingURL=styles.css.map */

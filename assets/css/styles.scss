@@ -1,18 +1,29 @@
 $textColorWhite: #fff;
-$bckgColorHeader: #3BCEAC;
-$linkHeaderHover: #47FFD4;
+$textColorYellow: #fff;
+$bckgColorHeader: #3bceac;
+$linkHeaderHover: #47ffd4;
+$bckgProjects: #ee4266;
 
-div{
+@mixin whiteLink() {
+  color: $textColorWhite;
+  text-decoration: none;
+}
+
+body {
+  background: $bckgColorHeader;
+}
+
+div {
   position: relative;
 }
 // HEADER PAGE LINKS
-header{
+header .container-fluid {
   background: $bckgColorHeader;
-  height: 80vh;
 }
 
 .page-link {
-  font-family: 'Montsserat', sans-serif;
+  margin-top: 3em;
+  font-family: "Montsserat", sans-serif;
   font-weight: 800;
   text-align: center;
   background: $bckgColorHeader;
@@ -25,51 +36,71 @@ header{
     text-decoration: none;
     color: $textColorWhite;
     margin-top: 1em;
-    &:hover{
-    color: $linkHeaderHover;
+    &:hover {
+      color: $linkHeaderHover;
+    }
   }
-  }
-  &:hover
-  {
+
+  &:hover {
     background-color: $bckgColorHeader;
   }
 }
 // HEADER CONTENT
-.header-content-left{
-  font-family: 'Roboto', sans-serif;
+.header-content-left {
+  font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
-  h1{
-      font-family: 'Oxygen', sans-serif;
-      font-weight: bold;
-      letter-spacing: 0px;
+  background-repeat: no-repeat;
+  h1 {
+    font-family: "Oxygen", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0px;
   }
 
-  a{
-    color: $textColorWhite;
-    text-decoration: none;
+  a {
+    @include whiteLink();
+    &:hover {
+      color: $linkHeaderHover;
+    }
   }
 }
 
-
-
-.header-content-right{
-  .header-picture
-  {
+.header-content-right {
+  letter-spacing: 2px;
+  .header-picture {
+    z-index: 2;
     height: 400px;
     object-fit: cover;
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 343px; 
-  }  
+    border-radius: 343px;
+    margin-left: 120px;
+  }
+
+  a {
+    @include whiteLink();
+    &:hover {
+      color: $linkHeaderHover;
+    }
+  }
 }
 
-.effect-canvas
-{
-  background: $textColorWhite;
-  height: 400px;
-  width: 60px;
+.effect-canvas {
+  position: absolute;
+  z-index: 1;
+  // background-color: black;
+  width: 100px;
+  height: 85%;
+  margin-top: 1em;
 }
 
 .txtPresentation-picture {
   font-size: 12px;
   text-align: center;
+}
+.waveBottomHeader {
+  fill: $bckgProjects;
+}
+
+.projects {
+  background-color: $bckgProjects;
+  height: 80vh;
 }
