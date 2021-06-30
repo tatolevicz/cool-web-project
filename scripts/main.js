@@ -35,7 +35,7 @@ animateSins();
 function drawAnimatedSin(startX, startY, freq, amp, phase) {
     ctx.beginPath()
     ctx.strokeStyle = "#fff"
-    ctx.lineWidth = 3;
+    ctx.lineWidth = 2;
 
     var x = 0;
     var deltaX = 1;
