@@ -67,21 +67,12 @@ header .container-fluid {
 
 .header-content-right {
   letter-spacing: 2px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header-content-right .header-picture {
-  -o-object-fit: cover;
-     object-fit: cover;
   -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
   border-radius: 343px;
-  margin-left: 120px;
 }
 
 .header-content-right a {
@@ -95,7 +86,6 @@ header .container-fluid {
 }
 
 .effect-canvas {
-  position: absolute;
   width: 100px;
   height: 85%;
   margin-top: 1em;
@@ -234,7 +224,6 @@ header .container-fluid {
 .about-content-right {
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
-  background-repeat: no-repeat;
   color: #fff;
 }
 
@@ -246,5 +235,11 @@ header .container-fluid {
 
 .about-content-right a:hover {
   color: #47ffd4;
+}
+
+.about-content-right .about-picture {
+  width: 100%;
+  -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=styles.css.map */
