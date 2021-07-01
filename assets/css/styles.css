@@ -104,6 +104,14 @@ header .container-fluid {
   background-color: #ee4266;
 }
 
+.projects .container-fluid {
+  background-color: #ee4266;
+}
+
+.waveTopProjects {
+  fill: #3bceac;
+}
+
 .slider {
   display: block;
   overflow-x: scroll;

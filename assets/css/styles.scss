@@ -103,14 +103,21 @@ header .container-fluid {
   font-size: 12px;
   text-align: center;
 }
+
 .waveBottomHeader {
   fill: $bckgProjects;
 }
 
 .projects {
   background-color: $bckgProjects;
+  .container-fluid {
+    background-color: $bckgProjects;
+  }
 }
 
+.waveTopProjects {
+  fill: $bckgColorHeader;
+}
 // Projects session
 .slider {
   display: block;
