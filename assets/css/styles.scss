@@ -12,6 +12,11 @@ $colorDark: #2f2f2f;
   text-decoration: none;
 }
 
+@mixin yellowLink() {
+  color: $colorYellow;
+  text-decoration: none;
+}
+
 body {
   background: $bckgColorHeader;
   box-sizing: border-box;
@@ -81,6 +86,7 @@ header .container-fluid {
 
   a {
     @include whiteLink();
+    white-space: nowrap;
     &:hover {
       color: $linkHeaderHover;
     }
@@ -105,7 +111,6 @@ header .container-fluid {
 
 .projects {
   background-color: $bckgProjects;
-  height: 55vh;
 }
 
 // Projects session
@@ -175,4 +180,50 @@ header .container-fluid {
 }
 .waveBottomProjects {
   fill: $bckgProjects;
+}
+
+.about {
+  background-color: $colorPurple;
+  .txtPresentation-picture {
+    color: $textColorWhite;
+    a {
+      @include yellowLink();
+      &:hover {
+        color: $linkHeaderHover;
+      }
+    }
+  }
+}
+// ABOUT CONTENT
+.about-content-left {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  background-repeat: no-repeat;
+  color: $textColorWhite;
+  h1 {
+    font-family: "Oxygen", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0px;
+  }
+
+  a {
+    @include yellowLink();
+    &:hover {
+      color: $linkHeaderHover;
+    }
+  }
+}
+
+.about-content-right {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  background-repeat: no-repeat;
+  color: $textColorWhite;
+  a {
+    @include yellowLink();
+    white-space: nowrap;
+    &:hover {
+      color: $linkHeaderHover;
+    }
+  }
 }

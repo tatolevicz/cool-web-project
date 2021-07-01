@@ -83,6 +83,7 @@ header .container-fluid {
 .header-content-right a {
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .header-content-right a:hover {
@@ -108,7 +109,6 @@ header .container-fluid {
 
 .projects {
   background-color: #ee4266;
-  height: 55vh;
 }
 
 .slider {
@@ -187,5 +187,61 @@ header .container-fluid {
 
 .waveBottomProjects {
   fill: #ee4266;
+}
+
+.about {
+  background-color: #540d6e;
+}
+
+.about .txtPresentation-picture {
+  color: #fff;
+}
+
+.about .txtPresentation-picture a {
+  color: #ffd23f;
+  text-decoration: none;
+}
+
+.about .txtPresentation-picture a:hover {
+  color: #47ffd4;
+}
+
+.about-content-left {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.about-content-left h1 {
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.about-content-left a {
+  color: #ffd23f;
+  text-decoration: none;
+}
+
+.about-content-left a:hover {
+  color: #47ffd4;
+}
+
+.about-content-right {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.about-content-right a {
+  color: #ffd23f;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.about-content-right a:hover {
+  color: #47ffd4;
 }
 /*# sourceMappingURL=styles.css.map */
