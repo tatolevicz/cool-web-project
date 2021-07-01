@@ -6,6 +6,7 @@ $bckgProjects: #ee4266;
 $colorYellow: #ffd23f;
 $colorPurple: #540d6e;
 $colorDark: #2f2f2f;
+$colorClear: #00000000;
 
 @mixin whiteLink() {
   color: $textColorWhite;
@@ -35,7 +36,7 @@ header .container-fluid {
   font-family: "Montsserat", sans-serif;
   font-weight: 800;
   text-align: center;
-  background: $bckgColorHeader;
+  background: $colorClear;
   color: $textColorWhite;
   text-decoration: none;
   display: flex;
@@ -226,4 +227,38 @@ header .container-fluid {
   .about-picture {
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25);
   }
+}
+
+// FOOTER
+.footer {
+  background-color: $colorDark;
+  color: $textColorWhite;
+  h3 {
+    font-family: "Oxygen", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+
+    letter-spacing: 0px;
+  }
+
+  p {
+    padding: 2rem;
+    padding-left: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: $textColorWhite;
+  }
+  a {
+    font-size: 14px;
+    @include yellowLink();
+    color: $bckgProjects;
+    &:hover {
+      color: $linkHeaderHover;
+    }
+  }
+}
+
+.waveTopFooter {
+  fill: $colorPurple;
 }
